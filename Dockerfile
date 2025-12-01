@@ -11,24 +11,12 @@ WORKDIR /app
 ENV UV_COMPILE_BYTECODE=1
 ENV UV_LINK_MODE=copy
 
-# Copy dependency files first (for caching)
-COPY pyproject.toml uv.lock ./
-
-# Install dependencies
-# --frozen: ensures the lockfile is strictly respected
-# --no-dev: excludes development dependencies (like pytest)
-# --no-install-project: installs libs only, not your app code yet
-RUN uv sync --frozen --no-dev --no-install-project
-
-# Add the virtual environment to PATH
-# This allows you to run "gunicorn" directly without activating
-ENV PATH="/app/.venv/bin:$PATH"
-
-# Copy the rest of your application code
+# Copy all files (needed for installation)
 COPY . .
 
-# (Optional) Install the project itself if it's a package
-# RUN uv sync --frozen --no-dev
+# Install dependencies system-wide
+# This avoids venv path issues and makes binaries immediately available
+RUN uv pip install --system -r pyproject.toml
 
 # Expose the port
 EXPOSE 8080
