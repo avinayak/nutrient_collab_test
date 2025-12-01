@@ -6,4 +6,4 @@ This is a test application demonstrating a collaborative signing flow using Nutr
 
 ## Bug Demo
 
-<video src="bug_demo.mp4" controls  />
+![Bug Demo](bug-demo.mp4)
