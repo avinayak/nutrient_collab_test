@@ -1,0 +1,77 @@
+{
+  "annotations": [
+    {
+      "bbox": [
+        107.08677673339844, 365.4918212890625, 187.40187072753906,
+        69.83920288085938
+      ],
+      "borderColor": "#808080",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "createdAt": "2025-12-01T19:17:19Z",
+      "creatorName": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
+      "customData": {
+        "actorType": "SELLER",
+        "fieldType": "SIGNATURE",
+        "role": "SELLER"
+      },
+      "formFieldName": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
+      "id": "01KBDNJ51QBH8ZR47FAWSJK10M",
+      "name": "01KBDNJ51S33PKNER0C03S17MD",
+      "opacity": 1,
+      "pageIndex": 0,
+      "rotation": 0,
+      "type": "pspdfkit/widget",
+      "updatedAt": "2025-12-01T19:17:36Z",
+      "v": 2
+    },
+    {
+      "bbox": [
+        336.39215087890625, 366.88861083984375, 182.28033447265625,
+        69.83920288085938
+      ],
+      "borderColor": "#808080",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "createdAt": "2025-12-01T19:17:26Z",
+      "creatorName": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
+      "customData": {
+        "actorType": "BUYER",
+        "fieldType": "SIGNATURE",
+        "role": "BUYER"
+      },
+      "formFieldName": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
+      "id": "01KBDNJBVZ268CXGP4YSSDJSM8",
+      "name": "01KBDNJBW0T9F2BN7N5P0N9WJ8",
+      "opacity": 1,
+      "pageIndex": 0,
+      "rotation": 0,
+      "type": "pspdfkit/widget",
+      "updatedAt": "2025-12-01T19:17:33Z",
+      "v": 2
+    }
+  ],
+  "formFieldValues": [],
+  "formFields": [
+    {
+      "annotationIds": ["01KBDNJ51QBH8ZR47FAWSJK10M"],
+      "id": "01KBDNJPK7DG95TXP66YQRMT0J",
+      "label": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
+      "name": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
+      "pdfObjectId": 140,
+      "type": "pspdfkit/form-field/signature",
+      "v": 1
+    },
+    {
+      "annotationIds": ["01KBDNJBVZ268CXGP4YSSDJSM8"],
+      "id": "01KBDNJPK80YJTYSPBF0CDQ1MD",
+      "label": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
+      "name": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
+      "pdfObjectId": 158,
+      "type": "pspdfkit/form-field/signature",
+      "v": 1
+    }
+  ],
+  "format": "https://pspdfkit.com/instant-json/v1",
+  "pdfId": null
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nutrient Signing Flow</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 50px;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .result {
+        margin-top: 20px;
+        padding: 10px;
+        background: #f0f0f0;
+        border: 1px solid #ccc;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nutrient Collaborative Test</h1>
+
+    <div id="step1">
+      <h3>Step 1: Upload & Prepare</h3>
+      <button onclick="generateDoc()">1. Generate Document</button>
+    </div>
+
+    <div id="step2" style="opacity: 0.5; pointer-events: none">
+      <h3>Step 2: Generate Signing Links</h3>
+      <p>Current Document ID: <span id="docIdDisplay">None</span></p>
+      <button onclick="generateLink('buyer')">2. Generate Buyer Link</button>
+      <button onclick="generateLink('seller')">3. Generate Seller Link</button>
+    </div>
+
+    <div id="resultArea" class="result"></div>
+    <br />
+    <br />
+    <br />
+    <tt>
+      Instructions <br />
+      1. Click "Generate Document" to create a new document with signature
+      fields. (A predefined PDF with signature fields is used.)
+      <br />
+      2. After the document is created, use the "Generate Buyer Link" and
+      "Generate Seller Link" buttons to get unique signing links for each role.
+    </tt>
+    <br />
+    <br />
+    <br />
+    source for this app is at https://github.com/atulmy/nutrient_collab_test
+
+    <script>
+      let currentDocId = null;
+
+      async function generateDoc() {
+        const res = await fetch("/generate-document", { method: "POST" });
+        const data = await res.json();
+
+        if (data.document_id) {
+          currentDocId = data.document_id;
+          document.getElementById("docIdDisplay").innerText = currentDocId;
+          document.getElementById("step2").style.opacity = "1";
+          document.getElementById("step2").style.pointerEvents = "auto";
+          alert("Document Created! ID: " + currentDocId);
+        } else {
+          alert("Error: " + JSON.stringify(data));
+        }
+      }
+
+      async function generateLink(role) {
+        if (!currentDocId) return;
+        const res = await fetch(`/generate-link/${role}/${currentDocId}`);
+        const data = await res.json();
+
+        const fullUrl = window.location.origin + data.link;
+
+        const display = document.getElementById("resultArea");
+        display.style.display = "block";
+        display.innerHTML = `<strong>${role.toUpperCase()} Link:</strong> <br> <a href="${fullUrl}" target="_blank">${fullUrl}</a>`;
+      }
+    </script>
+  </body>
+</html>
