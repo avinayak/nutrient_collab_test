@@ -7,7 +7,6 @@
       body {
         font-family: sans-serif;
         padding: 50px;
-        text-align: center;
       }
       button {
         padding: 10px 20px;
@@ -26,6 +25,10 @@
   </head>
   <body>
     <h1>Nutrient Collaborative Test</h1>
+    <p>
+      This app demonstrates a collaborative signing flow using Nutrient's
+      Document Engine.
+    </p>
 
     <div id="step1">
       <h3>Step 1: Upload & Prepare</h3>
@@ -54,7 +57,32 @@
     <br />
     <br />
     <br />
-    source for this app is at https://github.com/atulmy/nutrient_collab_test
+    <p>How It works:
+        <ul>
+            <li>
+            The app uploads a static PDF with static signature fields and Instant JSON to the
+            Nutrient Document Engine.
+            </li>
+            <li>
+                It fetches current annotations and creates a mapping between signature field widgets and BUYER/SELLER roles.
+            </li>
+            <li>
+                Assigns roles to signature fields based on this mapping. (PUT api/documents/{doc_id}/form-fields API)
+            </li>
+            <li>
+            It then generates unique JWT-authenticated links for "buyer" and
+            "seller" roles.
+            </li>
+            <li>
+            Each link opens the document in a web viewer where the respective user
+            can sign.
+            </li>
+        </ul>
+    </p>
+    source for this app is at
+    <a href="https://github.com/avinayak/nutrient_collab_test" target="_blank"
+      >https://github.com/avinayak/nutrient_collab_test</a
+    >
 
     <script>
       let currentDocId = null;

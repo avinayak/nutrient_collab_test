@@ -4,6 +4,7 @@
 #   "requests",
 #   "pyjwt",
 #   "cryptography",
+#   "gunicorn",
 #   "flask"
 # ]
 # ///
@@ -18,7 +19,7 @@ import json
 app = Flask(__name__)
 
 # CONFIGURATION
-DOC_ENGINE_URL = "https://denghiive.tulv.in/"  # fake
+DOC_ENGINE_URL = "https://denghiive.tulv.in/"  # fake self hosted document engine
 JWT_SECRET = open("nutrient_private_key.txt").read().strip()  # fake
 NUTRIENT_AUTH_TOKEN = "pdf_live_NWt9ZpZIdX0pZnDrLcL7tdjRTIxYA6xgAiylxKpd9Oe"  # fake
 
