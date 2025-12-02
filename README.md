@@ -6,4 +6,4 @@ This is a test application demonstrating a collaborative signing flow using Nutr
 
 ## Bug Demo
 
-<video src="./bug_demo.mp4" width="320" height="240" controls></video>
+<video src="https://github.com/avinayak/nutrient_collab_test/raw/refs/heads/main/bug_demo.mp4"></video>
