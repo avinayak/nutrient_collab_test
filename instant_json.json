@@ -2,72 +2,176 @@
   "annotations": [
     {
       "bbox": [
-        107.08677673339844, 365.4918212890625, 187.40187072753906,
-        69.83920288085938
+        109.48374938964844, 169.0892333984375, 187.50901794433594,
+        24.628662109375
       ],
       "borderColor": "#808080",
       "borderStyle": "solid",
-      "borderWidth": 0,
-      "createdAt": "2025-12-01T19:17:19Z",
-      "creatorName": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
+      "borderWidth": 2,
+      "createdAt": "2025-12-03T00:11:34Z",
+      "creatorName": "TEXT_WIDGET_01KBGRSN8WCTC4NR2GS5M9JK4Q",
+      "customData": {
+        "actorType": "SELLER",
+        "fieldType": "TEXT",
+        "role": "SELLER"
+      },
+      "font": "Helvetica",
+      "fontSize": 12,
+      "formFieldName": "TEXT_WIDGET_01KBGRSN8WCTC4NR2GS5M9JK4Q",
+      "horizontalAlign": "left",
+      "id": "01KBGRSN8WF2CJATJNTJ5WF4E5",
+      "lineHeightFactor": 1.186000108718872,
+      "name": "01KBGRSN8X496ZKZENDEJXJHJ8",
+      "opacity": 1,
+      "pageIndex": 0,
+      "rotation": 0,
+      "type": "pspdfkit/widget",
+      "updatedAt": "2025-12-03T00:11:43Z",
+      "v": 2,
+      "verticalAlign": "center"
+    },
+    {
+      "bbox": [
+        334.45318603515625, 168.88232421875, 187.71600341796875, 25.24951171875
+      ],
+      "borderColor": "#808080",
+      "borderStyle": "solid",
+      "borderWidth": 2,
+      "createdAt": "2025-12-03T00:11:48Z",
+      "creatorName": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH237F",
+      "customData": {
+        "actorType": "BUYER",
+        "fieldType": "TEXT",
+        "role": "BUYER"
+      },
+      "font": "Helvetica",
+      "fontSize": 12,
+      "formFieldName": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH237F",
+      "horizontalAlign": "left",
+      "id": "01KBGRT2GP3C614GJG2N9F21KP",
+      "lineHeightFactor": 1.186000108718872,
+      "name": "01KBGRT2GQ13ANEEMY7A4AQRAA",
+      "opacity": 1,
+      "pageIndex": 0,
+      "rotation": 0,
+      "type": "pspdfkit/widget",
+      "updatedAt": "2025-12-03T00:11:54Z",
+      "v": 2,
+      "verticalAlign": "center"
+    },
+    {
+      "bbox": [
+        108.86285400390625, 365.08380126953125, 188.5438232421875,
+        70.36761474609375
+      ],
+      "borderColor": "#808080",
+      "borderStyle": "solid",
+      "borderWidth": 2,
+      "createdAt": "2025-12-03T00:11:59Z",
+      "creatorName": "SIGNATURE_WIDGET_01KBGRTD8F2VEX1KBK2HRADFAD",
       "customData": {
         "actorType": "SELLER",
         "fieldType": "SIGNATURE",
         "role": "SELLER"
       },
-      "formFieldName": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
-      "id": "01KBDNJ51QBH8ZR47FAWSJK10M",
-      "name": "01KBDNJ51S33PKNER0C03S17MD",
+      "formFieldName": "SIGNATURE_WIDGET_01KBGRTD8F2VEX1KBK2HRADFAD",
+      "id": "01KBGRTD8FQ5DMQ26E2F1YDZGN",
+      "name": "01KBGRTD8GX98TF7DK6PQ4GWST",
       "opacity": 1,
       "pageIndex": 0,
       "rotation": 0,
       "type": "pspdfkit/widget",
-      "updatedAt": "2025-12-01T19:17:36Z",
+      "updatedAt": "2025-12-03T00:12:17Z",
       "v": 2
     },
     {
       "bbox": [
-        336.39215087890625, 366.88861083984375, 182.28033447265625,
-        69.83920288085938
+        333.6253356933594, 366.3255920410156, 188.75082397460938,
+        68.91888427734375
       ],
       "borderColor": "#808080",
       "borderStyle": "solid",
-      "borderWidth": 0,
-      "createdAt": "2025-12-01T19:17:26Z",
-      "creatorName": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
+      "borderWidth": 2,
+      "createdAt": "2025-12-03T00:12:07Z",
+      "creatorName": "SIGNATURE_WIDGET_01KBGRTN09R2VYAGDAY6R6YVBS",
       "customData": {
         "actorType": "BUYER",
         "fieldType": "SIGNATURE",
         "role": "BUYER"
       },
-      "formFieldName": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
-      "id": "01KBDNJBVZ268CXGP4YSSDJSM8",
-      "name": "01KBDNJBW0T9F2BN7N5P0N9WJ8",
+      "formFieldName": "SIGNATURE_WIDGET_01KBGRTN09R2VYAGDAY6R6YVBS",
+      "id": "01KBGRTN09VYV2CYPCK4DYKQ31",
+      "name": "01KBGRTN0A8V5HX276E465NPBY",
       "opacity": 1,
       "pageIndex": 0,
       "rotation": 0,
       "type": "pspdfkit/widget",
-      "updatedAt": "2025-12-01T19:17:33Z",
+      "updatedAt": "2025-12-03T00:12:14Z",
       "v": 2
     }
   ],
-  "formFieldValues": [],
+  "formFieldValues": [
+    {
+      "name": "TEXT_WIDGET_01KBGRSN8WCTC4NR2GS5M9JK4Q",
+      "type": "pspdfkit/form-field-value",
+      "v": 1,
+      "value": ""
+    },
+    {
+      "name": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH237F",
+      "type": "pspdfkit/form-field-value",
+      "v": 1,
+      "value": ""
+    }
+  ],
   "formFields": [
     {
-      "annotationIds": ["01KBDNJ51QBH8ZR47FAWSJK10M"],
-      "id": "01KBDNJPK7DG95TXP66YQRMT0J",
-      "label": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
-      "name": "SIGNATURE_WIDGET_01KBDNJ51QADVVNJ5HADGGEKM1",
+      "annotationIds": ["01KBGRSN8WF2CJATJNTJ5WF4E5"],
+      "comb": false,
+      "defaultValue": "",
+      "doNotScroll": false,
+      "doNotSpellCheck": false,
+      "id": "01KBGRVBHY10V5W1NH0X3MD0EV",
+      "label": "TEXT_WIDGET_01KBGRSN8WCTC4NR2GS5M9JK4Q",
+      "multiLine": false,
+      "name": "TEXT_WIDGET_01KBGRSN8WCTC4NR2GS5M9JK4Q",
+      "password": false,
       "pdfObjectId": 140,
+      "richText": false,
+      "type": "pspdfkit/form-field/text",
+      "v": 1
+    },
+    {
+      "annotationIds": ["01KBGRT2GP3C614GJG2N9F21KP"],
+      "comb": false,
+      "defaultValue": "",
+      "doNotScroll": false,
+      "doNotSpellCheck": false,
+      "id": "01KBGRVBHZNVZFHTCAYGBNMRQH",
+      "label": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH237F",
+      "multiLine": false,
+      "name": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH237F",
+      "password": false,
+      "pdfObjectId": 155,
+      "richText": false,
+      "type": "pspdfkit/form-field/text",
+      "v": 1
+    },
+    {
+      "annotationIds": ["01KBGRTD8FQ5DMQ26E2F1YDZGN"],
+      "id": "01KBGRVBHZTCEPVQNW0AE0YPZ6",
+      "label": "SIGNATURE_WIDGET_01KBGRTD8F2VEX1KBK2HRADFAD",
+      "name": "SIGNATURE_WIDGET_01KBGRTD8F2VEX1KBK2HRADFAD",
+      "pdfObjectId": 168,
       "type": "pspdfkit/form-field/signature",
       "v": 1
     },
     {
-      "annotationIds": ["01KBDNJBVZ268CXGP4YSSDJSM8"],
-      "id": "01KBDNJPK80YJTYSPBF0CDQ1MD",
-      "label": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
-      "name": "SIGNATURE_WIDGET_01KBDNJBVZANW7P9VSA5V6Y5WE",
-      "pdfObjectId": 158,
+      "annotationIds": ["01KBGRTN09VYV2CYPCK4DYKQ31"],
+      "id": "01KBGRVBHZK1VP05JGEPCENJH0",
+      "label": "SIGNATURE_WIDGET_01KBGRTN09R2VYAGDAY6R6YVBS",
+      "name": "SIGNATURE_WIDGET_01KBGRTN09R2VYAGDAY6R6YVBS",
+      "pdfObjectId": 180,
       "type": "pspdfkit/form-field/signature",
       "v": 1
     }
