@@ -27,11 +27,9 @@ https://github.com/user-attachments/assets/2227a96e-5dd4-4cb4-9842-be27178a8511
 3. click "Generate Buyer Link" and open the generated link.
 4. open inspect element and paste this snippet
 
-           const container=document.getElementById("doc-container");const unloaded=PSPDFKit.unload(container);PSPDFKit.load({container:"#doc-container",documentId:documentId,authPayload:{jwt:jwtToken},serverUrl:engineUrl,instant:true}).then((instance)=>{const circle=new PSPDFKit.Annotations.EllipseAnnotation({pageIndex:0,boundingBox:new PSPDFKit.Geometry.Rect({left:100,top:100,width:100,height:100})});instance.create(circle)}).catch((error)=>{});
+    const container=document.getElementById("doc-container");const unloaded=PSPDFKit.unload(container);PSPDFKit.load({container:"#doc-container",documentId:documentId,authPayload:{jwt:jwtToken},serverUrl:engineUrl,instant:true}).then((instance)=>{const circle=new PSPDFKit.Annotations.EllipseAnnotation({pageIndex:0,boundingBox:new PSPDFKit.Geometry.Rect({left:100,top:100,width:100,height:100})});instance.create(circle)}).catch((error)=>{});
+
 6. You should see a permanent circle (it persists page refresh)
-
-### Bug Demo
-
 
 
 ## Run this locally
