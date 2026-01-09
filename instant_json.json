@@ -61,6 +61,41 @@
     },
     {
       "bbox": [
+        334.45318603515625, 270.1318359375, 187.71600341796875, 25.24951171875
+      ],
+      "borderColor": "#808080",
+      "borderStyle": "solid",
+      "borderWidth": 2,
+      "createdAt": "2026-01-09T00:00:00Z",
+      "creatorName": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "customData": {
+        "actorType": "BUYER",
+        "fieldType": "TEXT",
+        "role": "BUYER"
+      },
+      "font": "Helvetica",
+      "fontSize": 12,
+      "formFieldName": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "horizontalAlign": "left",
+      "id": "01KBGRT2GP3C614GJG2N9F22KP",
+      "lineHeightFactor": 1.186000108718872,
+      "name": "01KBGRT2GQ13ANEEMY7A4AQRBB",
+      "opacity": 1,
+      "pageIndex": 0,
+      "rotation": 0,
+      "type": "pspdfkit/widget",
+      "updatedAt": "2026-01-09T00:00:00Z",
+      "v": 2,
+      "verticalAlign": "center",
+      "additionalActions": {
+        "onInput": {
+          "type": "javaScript",
+          "script": "if (/^\\d*$/.test(event.change)) { event.rc = true; } else { event.rc = false; }"
+        }
+      }
+    },
+    {
+      "bbox": [
         108.86285400390625, 365.08380126953125, 188.5438232421875,
         70.36761474609375
       ],
@@ -108,6 +143,29 @@
       "type": "pspdfkit/widget",
       "updatedAt": "2025-12-03T00:12:14Z",
       "v": 2
+    },
+    {
+      "bbox": [500, 50, 20, 20],
+      "borderColor": "#808080",
+      "borderStyle": "solid",
+      "borderWidth": 2,
+      "createdAt": "2026-01-07T00:00:00Z",
+      "creatorName": "CHECKBOX_WIDGET_01KBGRTZ9ABCD1234EFGH5678",
+      "customData": {
+        "actorType": "BUYER",
+        "fieldType": "CHECKBOX",
+        "role": "BUYER"
+      },
+      "formFieldName": "CHECKBOX_WIDGET_01KBGRTZ9ABCD1234EFGH5678",
+      "id": "01KBGRTZ9A5NWPQRSTUVWXYZ12",
+      "name": "01KBGRTZ9B8C9D0E1F2G3H4I5J",
+      "opacity": 1,
+      "pageIndex": 0,
+      "rotation": 0,
+      "type": "pspdfkit/widget",
+      "updatedAt": "2026-01-07T00:00:00Z",
+
+      "v": 2
     }
   ],
   "formFieldValues": [
@@ -122,6 +180,18 @@
       "type": "pspdfkit/form-field-value",
       "v": 1,
       "value": ""
+    },
+    {
+      "name": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "type": "pspdfkit/form-field-value",
+      "v": 1,
+      "value": ""
+    },
+    {
+      "name": "CHECKBOX_WIDGET_01KBGRTZ9ABCD1234EFGH5678",
+      "type": "pspdfkit/form-field-value",
+      "v": 1,
+      "value": "Off"
     }
   ],
   "formFields": [
@@ -158,6 +228,28 @@
       "v": 1
     },
     {
+      "annotationIds": ["01KBGRT2GP3C614GJG2N9F22KP"],
+      "comb": false,
+      "defaultValue": "",
+      "doNotScroll": false,
+      "doNotSpellCheck": false,
+      "id": "01KBGRVBHZNVZFHTCAYGBNMRQI",
+      "label": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "multiLine": false,
+      "name": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "password": false,
+      "pdfObjectId": 156,
+      "richText": false,
+      "type": "pspdfkit/form-field/text",
+      "additionalActions": {
+        "onInput": {
+          "type": "javaScript",
+          "script": "if (/^\\d*$/.test(event.change)) { event.rc = true; } else { event.rc = false; }"
+        }
+      },
+      "v": 1
+    },
+    {
       "annotationIds": ["01KBGRTD8FQ5DMQ26E2F1YDZGN"],
       "id": "01KBGRVBHZTCEPVQNW0AE0YPZ6",
       "label": "SIGNATURE_WIDGET_01KBGRTD8F2VEX1KBK2HRADFAD",
@@ -173,6 +265,22 @@
       "name": "SIGNATURE_WIDGET_01KBGRTN09R2VYAGDAY6R6YVBS",
       "pdfObjectId": 180,
       "type": "pspdfkit/form-field/signature",
+      "v": 1
+    },
+    {
+      "annotationIds": ["01KBGRTZ9A5NWPQRSTUVWXYZ12"],
+      "id": "01KBGRVBHZ9K2M3N4P5Q6R7S8T",
+      "label": "CHECKBOX_WIDGET_01KBGRTZ9ABCD1234EFGH5678",
+      "name": "CHECKBOX_WIDGET_01KBGRTZ9ABCD1234EFGH5678",
+      "options": [
+        {
+          "annotationId": "01KBGRTZ9A5NWPQRSTUVWXYZ12",
+          "label": "Yes",
+          "value": "Yes"
+        }
+      ],
+      "pdfObjectId": 192,
+      "type": "pspdfkit/form-field/checkbox",
       "v": 1
     }
   ],

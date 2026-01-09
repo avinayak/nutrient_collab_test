@@ -29,8 +29,8 @@ def home():
     return render_template("index.html")
 
 
-def get_signature_widgets_instant_json():
-    """Returns the Instant JSON configuration for signature widgets."""
+def get_form_widgets_instant_json():
+    """Returns the Instant JSON configuration for form widgets (text fields, signatures, checkboxes, etc.)."""
     json_str = open("instant_json.json").read()
     return json.loads(json_str)
 
@@ -73,6 +73,16 @@ def upload_document_to_engine(pdf_path, instant_json):
         data=body,
         headers=headers,
     )
+
+    if not response.ok:
+        import sys
+
+        error_msg = f"\n{'='*60}\nERROR: {response.status_code}\n{'='*60}\n"
+        error_msg += f"Response Text:\n{response.text}\n"
+        error_msg += f"{'='*60}\n"
+        print(error_msg, file=sys.stderr, flush=True)
+        print(error_msg, flush=True)
+
     response.raise_for_status()
 
     result = response.json()
@@ -106,10 +116,10 @@ def configure_form_field_groups(doc_id):
 @app.route("/generate-document", methods=["POST"])
 def generate_document():
     """
-    Uploads a PDF to Document Engine with signature widgets and configures
-    form field groups for buyer/seller roles.
+    Uploads a PDF to Document Engine with form widgets (text, signatures, checkboxes)
+    and configures form field groups for buyer/seller roles.
     """
-    instant_json = get_signature_widgets_instant_json()
+    instant_json = get_form_widgets_instant_json()
     doc_id = upload_document_to_engine("transfer.pdf", instant_json)
     configure_form_field_groups(doc_id)
 
@@ -168,6 +178,12 @@ def apply_actor_groups(actor_map, form_fields):
                 else:
                     widget["group"] = group  # fallback to field-level group
 
+            # For checkbox fields, update the annotationId in options to match the new widget ID
+            if field["content"]["type"] == "pspdfkit/form-field/checkbox":
+                if "options" in field["content"]:
+                    for option in field["content"]["options"]:
+                        option["annotationId"] = widget_id
+    print(json.dumps(form_fields, indent=2))
     return form_fields
 
 
