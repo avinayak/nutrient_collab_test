@@ -67,7 +67,7 @@
       "borderStyle": "solid",
       "borderWidth": 2,
       "createdAt": "2026-01-09T00:00:00Z",
-      "creatorName": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "creatorName": "NUMERIC_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
       "customData": {
         "actorType": "BUYER",
         "fieldType": "TEXT",
@@ -75,7 +75,7 @@
       },
       "font": "Helvetica",
       "fontSize": 12,
-      "formFieldName": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "formFieldName": "NUMERIC_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
       "horizontalAlign": "left",
       "id": "01KBGRT2GP3C614GJG2N9F22KP",
       "lineHeightFactor": 1.186000108718872,
@@ -86,13 +86,7 @@
       "type": "pspdfkit/widget",
       "updatedAt": "2026-01-09T00:00:00Z",
       "v": 2,
-      "verticalAlign": "center",
-      "additionalActions": {
-        "onInput": {
-          "type": "javaScript",
-          "script": "if (/^\\d*$/.test(event.change)) { event.rc = true; } else { event.rc = false; }"
-        }
-      }
+      "verticalAlign": "center"
     },
     {
       "bbox": [
@@ -182,7 +176,7 @@
       "value": ""
     },
     {
-      "name": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "name": "NUMERIC_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
       "type": "pspdfkit/form-field-value",
       "v": 1,
       "value": ""
@@ -234,19 +228,13 @@
       "doNotScroll": false,
       "doNotSpellCheck": false,
       "id": "01KBGRVBHZNVZFHTCAYGBNMRQI",
-      "label": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "label": "NUMERIC_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
       "multiLine": false,
-      "name": "TEXT_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
+      "name": "NUMERIC_WIDGET_01KBGRT2GPKNKK63E8JRTH238F",
       "password": false,
       "pdfObjectId": 156,
       "richText": false,
       "type": "pspdfkit/form-field/text",
-      "additionalActions": {
-        "onInput": {
-          "type": "javaScript",
-          "script": "if (/^\\d*$/.test(event.change)) { event.rc = true; } else { event.rc = false; }"
-        }
-      },
       "v": 1
     },
     {

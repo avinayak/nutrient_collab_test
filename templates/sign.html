@@ -34,11 +34,32 @@
         serverUrl: engineUrl,
         instant: true, // Enable Instant sync
       })
-        .then((instance) => {
-          console.log("PSPDFKit loaded", instance);
+        .then(async (instance) => {
+          console.log("Nutrient Viewer loaded", instance);
+          const fieldValidValues = {};
+          const formFields = await instance.getFormFields();
+          const numericOnlyFields = formFields
+            .toArray()
+            .filter((field) => field.name.startsWith("NUMERIC"))
+            .map((field) => field.name);
 
-          // Optional: Zoom to signature fields automatically
-          // instance.setViewState(viewState => viewState.set("zoom", "FIT_TO_WIDTH"));
+          instance.addEventListener("formFieldValues.update", (formFields) => {
+            formFields.forEach((formField) => {
+              if (numericOnlyFields.includes(formField.name)) {
+                const currentValues = instance.getFormFieldValues();
+                const newValue = currentValues[formField.name] || "";
+                if (/^\d*$/.test(newValue)) {
+                  fieldValidValues[formField.name] = newValue;
+                } else {
+                  instance.setFormFieldValues({
+                    [formField.name]: fieldValidValues[formField.name] || "",
+                  });
+                }
+              }
+            });
+          });
+
+          return instance;
         })
         .catch((error) => {
           console.error("Failed to load PDF", error);
